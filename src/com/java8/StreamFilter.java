@@ -25,6 +25,12 @@ public class StreamFilter {
 
 		System.out.println("even numbers count " + count);
 
+		/*
+		 * Sum of numbers
+		 */
+		int sum = list.stream().filter(n -> n % 2 != 0).mapToInt(n -> n).sum();
+		System.out.println("sum of odd numbers " + sum);
+
 	}
 
 }
